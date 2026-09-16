@@ -462,7 +462,6 @@ body {
     }
 
 
-    /* NAV LINKS */
 
     .nav-links {
         width: 100%;
@@ -675,3 +674,161 @@ body {
     }
 
 }
+
+
+
+.categories-section {
+    padding: 80px 6%;
+    background: #f8f8f8;
+}
+
+.categories-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-heading h2 {
+    font-size: 38px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.section-heading p {
+    font-size: 16px;
+    color: #777;
+}
+
+
+
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+
+
+
+.category-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+}
+
+
+
+
+.category-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+.category-image {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.category-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+
+
+
+.category-card:hover .category-image img {
+    transform: scale(1.08);
+}
+
+
+
+
+.category-content {
+    text-align: center;
+    padding: 22px 15px 25px;
+}
+
+.category-content h3 {
+    font-size: 24px;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+
+
+
+.category-btn {
+    display: inline-block;
+    padding: 10px 22px;
+    background: #222;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.category-btn:hover {
+    background: #555;
+}
+
+
+
+
+@media (max-width: 992px) {
+
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .category-image {
+        height: 280px;
+    }
+
+}
+
+
+
+
+@media (max-width: 600px) {
+
+    .categories-section {
+        padding: 60px 5%;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .section-heading p {
+        font-size: 14px;
+    }
+
+    .category-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .category-image {
+        height: 300px;
+    }
+
+}
+
